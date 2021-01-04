@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>JavaScript.</h1>
+<h2>Events</h2>
+
+<button onclick="getElementById('demo').innerHTML = new Date()">Click the button</button>
+<p id="demo"></p>
+
+
+<button onclick="this.innerHTML=new Date()">Push the button</button>
+<p id="demo1"></p>
+
+<p onmouseover="this.style.color='yellow'; onmouseout=this.style.backgroundColor='green'">Here we have some text</p>
+
+<h3><em>onkeydown</em></h3>
+<input type="text" onkeydown="theFunction()">
+<p id="demo2"></p>
+
+<h3><em>onchange()</em></h3>
+<select id="selection" name="" onchange="myFunction()">
+    <option value="Samsung">Samsung</option>
+    <option value="Nokia">Nokia</option>
+    <option value="IPhone">IPhone</option>
+    <option value="Sony">Sony</option>
+</select>
+<p id="demo3"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
